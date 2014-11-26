@@ -15,7 +15,7 @@
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Custom CSS -->
-    <link href="css/business-frontpage.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -39,13 +39,13 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="home.html"><img src="images/StopSign.png" alt="logo" height="45px" width="45px"/></a>
+                <a class="navbar-brand" href="index.html"><img src="images/StopSign.png" alt="logo" height="45px" width="45px"/></a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="home.html">Home</a>
+                        <a href="index.html">Home</a>
                     </li>
                     <li>
                         <a href="compiler.html">Compiler</a>
@@ -54,7 +54,7 @@
                         <a href="tutorial.html">Tutorials</a>
                     </li>
                     <li>
-                        <a href="technews.html">Tech News</a>
+                        <a href="news.html">Tech News</a>
                     </li>
                     <li>
                         <a href="blackboard.html">Blackboard</a>
@@ -92,35 +92,59 @@
 
     <!-- Page Content -->
     <div class="container">
-
-        <hr>
-        
-         <div>
-                <h1>What is CS One Stop?</h1>
-                <p>CS One Stop is the go to place for Computer Science students, whether they are in high school, college, recently graduated or just simply interested in the computer science field. Here they will find everything from tutorials for popular programming languages, a compiler that will allow them to run code from any internet connected device, information on the lastest technology and news, career resources, such as what skills employers are looking for, and a course management system, where instructos and students can interact.</p>
-            </div>
+        <div id="dearstudent" class="col-sm-6">
+            <h2>Dear Computer Science Student...</h2>
+            <p>You've spent hours stuck in class learning about Finite State Automata while some 17 year old kid just made a couple million dollars after selling his iPhone app. Every job you've applied to asks to be fluent in a language you've never even heard of before, while you finish up your class project in Assembly. You know you need real world experience but don't even know where to begin looking for it. There's a huge divide between a CS degree and real-world skills. CS One Stop is the bridge between and the guiding light along your Computer Science career path.</p>
+        </div>
+        <div class="col-sm-6" id="whatis">
+            <h2>What is CS One Stop?</h2>
+            <p>CS One Stop is the go to place for Computer Science students, whether they are in high school, college, recently graduated or just simply interested in the computer science field. Here they will find everything from tutorials for popular programming languages, a compiler that will allow them to run code from any internet connected device, information on the lastest technology and news, career resources, such as what skills employers are looking for, and a course management system, where instructors and students can interact.</p>
         </div>
         <!-- /.row -->
 
-        <hr>
-
         <div>
             <div class="col-sm-4">
-                <a href="compiler.html"><img class="img-circle img-responsive img-center" src="images/compiler.jpg" height="300px;" width="300px;" alt=""></a>
+                <div class="flip-container" ontouchstart="this.classList.toggle('hover')">
+                    <div class="flipper">
+                        <div class="front">
+                            <a href="compiler.html"><img class="img-circle img-responsive img-center" src="images/compiler.jpg" height="300px;" width="300px;" alt=""></a>
+                        </div>
+                        <div class="back">
+                            <a href="compiler.html"><h3>Compile Code.</h3><h3>Anywhere.</h3><h3>Hassle-Free.</h3></a>
+                        </div>
+                    </div>
+                </div>
                 <a href="compiler.html"><h2>Compiler</h2></a>
                 <p>A compiler, powered by Sphere Engine, that will allow you to code and run programs written in the most popular languages without having to download anything.</p>
             </div>
             <div class="col-sm-4">
-                <a href="blackboard.html"><img class="img-circle img-responsive img-center" src="images/classroom1.jpg" height="300px;" width="300px;" alt=""></a>
+                <div class="flip-container" ontouchstart="this.classList.toggle('hover')">
+                    <div class="flipper">
+                        <div class="front">
+                            <a href="blackboard.html"><img class="img-circle img-responsive img-center" src="images/classroom1.jpg" height="300px;" width="300px;" alt=""></a>
+                        </div>
+                        <div class="back">
+                            <a href="blackboard.html"><h3>Connected to Class.</h3><h3>So you don't fall behind.</h3></a>
+                        </div>
+                    </div>
+                </div>
                 <a href="blackboard.html"><h2>BlackBoard</h2></a>
                 <p>A course management system, that will allow instructions and students to interact. Grades, assignment and much more will be available.</p>
             </div>
             <div class="col-sm-4">
-                <a href="technews.html"><img class="img-circle img-responsive img-center" src="images/news.jpg" height="300px;" width="300px;" alt=""></a>
+                <div class="flip-container" ontouchstart="this.classList.toggle('hover')">
+                    <div class="flipper">
+                        <div class="front">                
+                            <a href="news.html"><img class="img-circle img-responsive img-center" src="images/news.jpg" height="300px;" width="300px;" alt=""></a>
+                        </div>
+                        <div class="back">
+                            <a href="news.html"><h3>Research.</h3><h3>Discover.</h3><h3>Stay in the know.</h3></a>
+                        </div>
+                    </div>
+                </div>
                 <a href="technews.html"><h2>Tech News</h2></a>
                 <p>The lastest news that all in the computer sciences community need to know. </p>
             </div>
-        </div>
         <!-- /.row -->
 
         <div class="row">
@@ -128,25 +152,48 @@
         
         <div>
             <div class="col-sm-4">
-                <a href="tutorial.html"><img class="img-circle img-responsive img-center" src="images/tutorials.jpg" height="300px;" width="300px;" alt=""></a>
+                <div class="flip-container" ontouchstart="this.classList.toggle('hover')">
+                    <div class="flipper">
+                        <div class="front"> 
+                            <a href="tutorial.html"><img class="img-circle img-responsive img-center" src="images/tutorials.jpg" height="300px;" width="300px;" alt=""></a>
+                        </div>
+                        <div class="back">
+                            <a href="tutorial.html"><h3>Learn.</h3><h3>Succeed.</h3><h3>Achieve.</h3></a>
+                        </div>
+                    </div>
+                </div>
                 <a href="tutorial.html"><h2>Tutorials</h2></a>
                 <p>Tutorials for popular programming languages you must know to succeed in computer science.</p>
             </div>
             <div class="col-sm-4">
-                <a href="careerresources.html"><img class="img-circle img-responsive img-center" src="images/careerResources.jpg" height="300px;" width="300px;" alt=""></a>
+                <div class="flip-container" ontouchstart="this.classList.toggle('hover')">
+                    <div class="flipper">
+                        <div class="front"> 
+                            <a href="careerresources.html"><img class="img-circle img-responsive img-center" src="images/careerResources.jpg" height="300px;" width="300px;" alt=""></a>
+                        </div>
+                        <div class="back">
+                            <a href="careerresources.html"><h3>Become the employee.</h3><h3>That companies need.</h3></a>
+                        </div>
+                    </div>
+                </div>
                 <a href="careerresources.html"><h2>Career Resources</h2></a>
                 <p>An insight into what employers are looking for when hiring prospected candidates. Also includes job postings.</p>
             </div>
             <div class="col-sm-4">
-                <a href="forum.html"><img class="img-circle img-responsive img-center" src="images/forums.jpg" height="300px;" width="300px;" alt=""></a>
+                <div class="flip-container" ontouchstart="this.classList.toggle('hover')">
+                    <div class="flipper">
+                        <div class="front">
+                            <a href="forum.html"><img class="img-circle img-responsive img-center" src="images/forums.jpg" height="300px;" width="300px;" alt=""></a>
+                        </div>
+                        <div class="back">
+                            <a href="forum.html"><h3>Discuss.</h3><h3>Debate.</h3><h3>Inquire.</h3></a>
+                        </div>
+                    </div>
+                </div>
                 <a href="forum.html"><h2>Forum</h2></a>
                 <p>A place where those in the computer science community can gather and talk.</p>
             </div>
         </div>
-
-
-    <div class="row">
-    </div>
     
         <!-- Footer -->
         <footer>
